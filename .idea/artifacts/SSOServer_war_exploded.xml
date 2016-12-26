@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SSOServer:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/SSOServer_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SSOServer" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="SSOServer/web/Web" />
+    </root>
+  </artifact>
+</component>
