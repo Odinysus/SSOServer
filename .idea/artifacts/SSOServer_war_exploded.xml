@@ -6,6 +6,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="SSOServer" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="caslibrary" />
+        </element>
       </element>
       <element id="javaee-facet-resources" facet="SSOServer/web/Web" />
     </root>
