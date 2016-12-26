@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e343694-04a5-410e-9990-8cb31c5dd574" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
-    </list>
+    <list default="true" id="4e343694-04a5-410e-9990-8cb31c5dd574" name="Default" comment="" />
     <ignored path="SSOServer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -667,12 +664,12 @@
       <workItem from="1482719044500" duration="1300000" />
       <workItem from="1482720384834" duration="7783000" />
       <workItem from="1482747732754" duration="6000" />
-      <workItem from="1482747993547" duration="87000" />
+      <workItem from="1482747993547" duration="457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16549000" />
+    <option name="totallyTimeSpent" value="16919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1320" y="53" width="1276" height="777" extended-state="6" />

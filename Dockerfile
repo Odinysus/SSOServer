@@ -12,7 +12,7 @@ ENV PATH=$PATH:$JRE_HOME/bin
 #    && mkdir -p /etc/cas/config \
 #    && cp -f SSOServer/config/*.* /etc/cas/config;
 
-COPY -r . /usr/local/tomcat/webapps/
+COPY  . /usr/local/tomcat/webapps/
 
 #COPY thekeystore /etc/cas/
 
