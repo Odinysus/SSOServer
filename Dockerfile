@@ -7,26 +7,6 @@ ENV PATH=$PATH:$JRE_HOME/bin
 RUN yum -y install wget tar unzip git \
     && yum -y clean all
 
-# Download Azul Java, verify the hash, and install \
-RUN set -x; \
-    java_version=8.0.112; \
-    zulu_version=8.19.0.1; \
-    java_hash=3f95d82bf8ece272497ae2d3c5b56c3b; \
-    
-    cd / \
-    && wget http://cdn.azul.com/zulu/bin/zulu$zulu_version-jdk$java_version-linux_x64.tar.gz \
-    && echo "$java_hash  zulu$zulu_version-jdk$java_version-linux_x64.tar.gz" | md5sum -c - \
-    && tar -zxvf zulu$zulu_version-jdk$java_version-linux_x64.tar.gz -C /opt \
-    && rm zulu$zulu_version-jdk$java_version-linux_x64.tar.gz \
-    && ln -s /opt/zulu$zulu_version-jdk$java_version-linux_x64/jre/ /opt/jre-home;
-
-RUN cd / \
-	&& wget http://www.azulsystems.com/sites/default/files/images/ZuluJCEPolicies.zip \
-    && unzip ZuluJCEPolicies.zip \
-    && mv -f ZuluJCEPolicies/*.jar /opt/jre-home/lib/security \
-    && rm ZuluJCEPolicies.zip; 
-
-
 # Set up Oracle Java properties
 # RUN set -x; \
 #     java_version=8u112; \
@@ -43,17 +23,18 @@ RUN cd / \
 #     && rm server-jre-$java_version-linux-x64.tar.gz \
 #     && ln -s /opt/jdk$java_semver/ /opt/jre-home;
 
-# Download the CAS overlay project \
-RUN cd / \
-    && git clone --depth 1 --single-branch https://github.com/johnMaster/SSOServer.git \
-    && mkdir -p /etc/cas \
-    && mkdir -p /etc/cas/services \
-    && mkdir -p /etc/cas/config \
-    && cp -f SSOServer/config/*.* /etc/cas/config;
+## Download the CAS overlay project \
+#RUN cd / \
+#    && git clone --depth 1 --single-branch https://github.com/johnMaster/SSOServer.git \
+#    && mkdir -p /etc/cas \
+#    && mkdir -p /etc/cas/services \
+#    && mkdir -p /etc/cas/config \
+#    && cp -f SSOServer/config/*.* /etc/cas/config;
 
-COPY thekeystore /etc/cas/
+#docker pull tomcat:8.5.9
+
+#COPY thekeystore /etc/cas/
 
 EXPOSE 8080 8443
 
-WORKDIR /SSOServer
-
+#WORKDIR /SSOServer 
