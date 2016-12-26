@@ -1,11 +1,11 @@
-FROM centos:centos7
+FROM tomcat:8.5.9
 
 MAINTAINER Apereo Foundation
 
 ENV PATH=$PATH:$JRE_HOME/bin
 
-RUN yum -y install wget tar unzip git \
-    && yum -y clean all
+#RUN yum -y install wget tar unzip git \
+#   && yum -y clean all
 
 # Set up Oracle Java properties
 # RUN set -x; \
