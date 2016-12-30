@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="EclipseModuleManager">
-    <conelement value="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0" />
-    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
-    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
-    <src_description expected_position="0">
-      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
-    </src_description>
-  </component>
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/applicationContext.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/auditTrailContext.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/securityContext.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/webflowContext.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/metricsContext.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/filters.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/deployerConfigContext.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/cas-servlet.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/spring-configuration/filters.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/spring-configuration/metricsContext.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/spring-configuration/webflowContext.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/spring-configuration/securityContext.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/spring-configuration/auditTrailContext.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/spring-configuration/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/spring-configuration/propertyFileConfigurer.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/spring-configuration/protocolViewsConfiguration.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/deployerConfigContext.xml</file>
+          <file>file://$MODULE_DIR$/out/artifacts/SSOServer_war_exploded/WEB-INF/unused-spring-configuration/clearpass-configuration.xml</file>
           <file>file://$MODULE_DIR$/WebContent/WEB-INF/cas-servlet.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/filters.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/metricsContext.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/webflowContext.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/securityContext.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/auditTrailContext.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/applicationContext.xml</file>
           <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/propertyFileConfigurer.xml</file>
           <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-configuration/protocolViewsConfiguration.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/deployerConfigContext.xml</file>
           <file>file://$MODULE_DIR$/WebContent/WEB-INF/unused-spring-configuration/clearpass-configuration.xml</file>
         </fileset>
       </configuration>
@@ -32,7 +35,7 @@
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebContent/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
-          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+          <root url="file://$MODULE_DIR$/WebContent" relative="/" />
         </webroots>
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />
@@ -50,11 +53,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
-    <orderEntry type="library" name="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0" level="application" />
-    <orderEntry type="library" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
-    <orderEntry type="library" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
-    <orderEntry type="library" name="caslibrary" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
