@@ -1,4 +1,4 @@
-FROM tomcat_maven
+FROM aa6835305/tomcat-maven
 
 MAINTAINER john dric <caidongqiang@hotmail.com>>
 
