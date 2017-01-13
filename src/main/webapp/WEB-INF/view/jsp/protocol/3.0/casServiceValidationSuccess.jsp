@@ -29,6 +29,10 @@
                         <cas:${fn:escapeXml(attr.key)}>${fn:escapeXml(attrval)}</cas:${fn:escapeXml(attr.key)}>
                     </c:forEach>
                 </c:forEach>
+                <c:forEach var="attr" items="${assertion.primaryAuthentication.principal.attributes}">
+                    <cas:${fn:escapeXml(attr.key)}>${fn:escapeXml(attr.value)}</cas:${fn:escapeXml(attr.key)}>**
+                </c:forEach>
+
             </cas:attributes>
         </c:if>
 

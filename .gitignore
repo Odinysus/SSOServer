@@ -1,4 +1,6 @@
 *.class
+# svn project
+.svn
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -13,7 +15,7 @@
 *.eml
 
 # idea setting dir
-/.idea
+.idea
 /out
 /target
 

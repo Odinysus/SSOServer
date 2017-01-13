@@ -1,6 +1,6 @@
 {
   "@class" : "org.jasig.cas.services.RegexRegisteredService",
-  "serviceId" : "^http://*.baidu.com",
+  "serviceId" : "^http://.*",
   "name" : "Apereo",
   "theme" : "apereo",
   "id" : 10000002,
